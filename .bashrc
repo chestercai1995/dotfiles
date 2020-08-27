@@ -92,6 +92,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias sl='ls'
+alias LS='ls'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -121,4 +122,15 @@ fi
 source /usr/share/autojump/autojump.bash
 
 # for thefuck
-alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
+alias fuck='eval $(thefuck $(fc -ln -1))' 
+
+export PS1="\[\e[32m\]\u\[\e[m\]\[\e[34;40m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\] \[\e[42m\]\w\[\e[m\] \[\e[36m\]*\[\e[m\]\[\e[36m\]\A\[\e[m\]\[\e[36m\]*\[\e[m\]\[\e[32m\]\n\\$\[\e[m\] "
+
+# alias grep='grep -rn'
+alias mario='ssh -X lcai@mario.ece.utexas.edu'
+alias daisy='ssh -X lcai@daisy.ece.utexas.edu'
+alias ca='ssh caproj@mario.ece.utexas.edu'
+alias tesla='ssh chestercai@tesla05.csres.utexas.edu'
+alias aos="ssh -J prateek@sorry.cs.utexas.edu prateeks@alembic.csres.utexas.edu"
+alias cs="ssh -J prateek@sorry.cs.utexas.edu chestercai@alembic.csres.utexas.edu"
+alias superego="ssh -J lcai@mario.ece.utexas.edu chester@superego.hps.utexas.edu"
